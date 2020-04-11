@@ -1,0 +1,53 @@
+{
+  "name": "egg-passport-steam",
+  "version": "1.0.0",
+  "description": "steam passport plugin for egg",
+  "eggPlugin": {
+    "name": "passportSteam",
+    "dependencies": [
+      "passport"
+    ]
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "egg-passport",
+    "passport-steam"
+  ],
+  "dependencies": {
+    "debug": "^2.6.1",
+    "passport-steam": "^1.0.12"
+  },
+  "devDependencies": {
+    "autod": "^2.7.1",
+    "egg": "^0.12.0",
+    "egg-bin": "^2.2.1",
+    "egg-ci": "^1.1.0",
+    "egg-mock": "^3.0.0",
+    "egg-passport": "^1.0.0",
+    "eslint": "^3.16.0",
+    "eslint-config-egg": "^3.2.0",
+    "supertest": "^3.0.0",
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "files": [
+    "app.js",
+    "config"
+  ],
+  "ci": {
+    "version": "6, 7"
+  },
+  "license": "MIT"
+}
